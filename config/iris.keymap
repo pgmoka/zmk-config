@@ -35,19 +35,12 @@
 // |PRTSCRN|  ~  |  !  |  &   | "|"  |      |                   |  <   |   >   |  (   |   )   |       |       |
 // |  CAPS |     |     |      |      |      |        |  |       |      |       |  {   |   }   |       |       |
 //                            |      |      |        |  |       |      |       |
-
-// ------------------------------------------------------------------------------------------------------------
-// |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-// |       |     |     |      | "["  | "]"  |                   |      |       |       |      |       |       |
-// |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-// |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
-//                            |      |      |        |  |       |      |       |
 			bindings = <
-&trans     &trans       &trans       &trans       &trans       &trans                      &trans    &trans    &trans          &trans    &trans    &trans
-&trans     &trans       &trans       &trans       &kp LBKT     &kp RBKT                      &trans    &trans    &trans          &trans    &trans    &trans
-&kp GRAVE  &kp EXCL     &kp AT       &kp HASH     &kp DOLLAR   &kp PRCNT                   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp TILDE
-&trans     &trans       &trans       &trans       &trans       &trans   &trans  &trans   &trans    &kp MINUS &kp KP_PLUS     &kp LBRC  &kp RBRC  &kp PIPE
-                   					              &trans       &trans    &trans   &trans   &trans    &trans
+&trans     &trans       &trans       &trans          &trans       &trans                      &trans    &trans    &trans          &trans    &trans    &trans
+&kp INS    &kp MINUS    &kp KP_PLUS  &kp KP_MULTIPLY &kp CARET    &kp PRCNT                   &kp BSLH  &kp FSLH  &kp LBKT        &kp RBKT  &trans    &trans
+&kp PSCRN  &kp TILDE    &kp EXCL     &kp AMPS        &kp PIPE     &trans                      &kp LT    &kp GT    &kp LPAR        &kp RPAR  &trans    &trans
+&kp CAPS   &trans       &trans       &trans          &trans       &trans   &trans  &trans     &trans    &trans    &kp LBRC        &kp RBRC  &trans    &trans
+                   					                 &trans       &trans    &trans   &trans   &trans    &trans
 			>;
 		};
 
