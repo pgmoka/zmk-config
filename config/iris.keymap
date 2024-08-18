@@ -31,16 +31,16 @@
 		lower_layer {
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR | F11 | F12 |      |      |      |                   |      |       |      |       |       |       |
-// |  BT3  |     |  ~  |  !   |  &   | "|"  |                   |  \   |   /   | "["  | "]"   |       |       |
+// |  BT3  |     |  ?  |  !   |  &   | "|"  |                   |  \   |   /   | "["  | "]"   |       |       |
 // |  BT4  |     |  *  |  ^   |  -   |   +  |                   |  <   |   >   |  (   |   )   |       |       |
 // |  BT5  |     |  %  |  #   |      |      |        |  |       |      |       |  {   |   }   |       |       |
 //                            |      |      |        |  |       |      |       |
 
 			bindings = <
-&bt BT_CLR   &kp F11      &kp F12      &trans          &trans       &trans                      &trans    &trans    &trans     &trans    &trans    &trans
-&bt BT_SEL 2 &trans       &trans       &kp MINUS       &kp KP_PLUS  &trans                      &kp BSLH  &kp FSLH  &kp LBKT   &kp RBKT  &trans    &trans
-&bt BT_SEL 3 &trans       &trans       &kp KP_MULTIPLY &kp CARET    &kp PRCNT                   &kp LT    &kp GT    &kp LPAR   &kp RPAR  &trans    &trans
-&bt BT_SEL 4 &trans       &kp TILDE    &kp EXCL        &kp AMPS     &kp PIPE   &trans  &trans   &trans    &trans    &kp LBRC   &kp RBRC  &trans    &trans
+&bt BT_CLR   &kp F11      &kp F12         &trans         &trans       &trans                      &trans    &trans    &trans     &trans    &trans    &trans
+&bt BT_SEL 2 &trans       &kp QMARK       &kp EXCL       &kp AMPS     &kp PIPE                    &kp BSLH  &kp FSLH  &kp LBKT   &kp RBKT  &trans    &trans
+&bt BT_SEL 3 &trans       &kp KP_MULTIPLY &kp CARET      &kp MINUS    &kp KP_PLUS                 &kp LT    &kp GT    &kp LPAR   &kp RPAR  &trans    &trans
+&bt BT_SEL 4 &trans       &kp PRCNT       &kp HASH       &trans       &trans     &trans  &trans   &trans    &trans    &kp LBRC   &kp RBRC  &trans    &trans
                    					                   &trans       &trans    &trans   &trans   &trans    &trans
 			>;
 		};
@@ -48,16 +48,16 @@
 		raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR |  F1 | F2  |  F3  |  F4  |  F5  |                   |  F6  |   F7  |   F8   |  F9  |  F10  |       |
-// |  BT1  |     |     |      |  _   |  =   |                   | PgUp |  END  |   ^    |PRTSCR|       |       |
-// |  BT2  |     |     |      |  @   |  $   |                   | PgDn |   <-  |   v    |  ->  |       |       |
-// |       |     |     |  `   |  '   |  "   |        |  |       |      |       |        |      |       |       |
+// |  BT1  |     |  ~  |  `   |  @   |  $   |                   | PgUp |  END  |   ^    |PRTSCR|       |       |
+// |  BT2  |     |  :  |  =   |  '   |  "   |                   | PgDn |   <-  |   v    |  ->  |       |       |
+// |       |     |  ;  |  ,   |  .   |      |        |  |       |      |       |        |      |       |       |
 //                            |      |      |        |  |       |      |       |
 
 			bindings = <
 &bt BT_CLR   &kp F1       &kp F2       &kp F3       &kp F4       &kp F5                        &kp F6      &kp F7    &kp F8    &kp F9     &kp F10   &trans
-&bt BT_SEL 0 &trans       &trans       &kp UNDER    &kp EQUAL    &trans                        &kp PG_UP   &kp END   &kp UP    &kp PSCRN  &trans    &trans
-&bt BT_SEL 1 &trans       &trans       &kp AT       &kp HASH     &kp DLLR                      &kp PG_DN   &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &trans
-&trans       &trans       &trans       &kp GRAVE    &kp APOS     &kp DQT    &trans   &trans     &trans      &trans   &trans    &trans     &trans    &trans
+&bt BT_SEL 0 &trans       &kp TILDE    &kp GRAVE    &kp AT       &kp DLLR                      &kp PG_UP   &kp END   &kp UP    &kp PSCRN  &trans    &trans
+&bt BT_SEL 1 &trans       &kp COLON    &kp KP_EQUAL &kp APOS     &kp DQT                       &kp PG_DN   &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &trans
+&trans       &trans       &kp SEMI     &kp COMMA    &kp DOT      &trans    &trans   &trans     &trans      &trans   &trans    &trans     &trans    &trans
                    				                    &trans       &trans     &trans   &trans     &trans      &trans
 			>;
 		};
